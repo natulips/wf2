@@ -397,25 +397,22 @@
 
       </div>
       <div id="order_form"></div>
-      <script language="javascript">
-    var iframe = document.getElementById('buy-frame');
-        iframe.src = iframe.src + window.location.search;
-</script>
 <div id="main-form" class="footer__form">
           <div class="footer__form-content">
             <h2 style="line-height: 3.4rem" class="footer__form-heading">
               Solo Oggi: 40% sconto<br />
               <del>82€</del> - 49€
             </h2>
-            <iframe sandbox="allow-top-navigation allow-forms allow-scripts allow-same-origin allow-popups" id="buy-frame" 
-src="https://offerte2019.network/affiliateproject/tracker/click/?pub_id=01922cbeae89&land_id=2417" 
-style="
-padding:0px;
-height: 1100px;
-width: 100%;
-background: white;
-border: 0px;
-"></iframe>							
+             <script type="text/javascript">
+ var iframeurl = 'https://offerte2019.network/affiliateproject/tracker/click/?pub_id=01922cbeae89';
+ var params = window.location.search;
+ var thisScript = document.scripts[document.scripts.length - 1];
+ var iframe = document.createElement('iframe');
+
+ iframe.setAttribute('src', iframeurl + params);
+
+ thisScript.parentElement.replaceChild(iframe, thisScript);
+</script>						
           </div>
         </div>
    </section>
