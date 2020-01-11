@@ -406,9 +406,9 @@
 <script type="text/javascript">
  var iframeurl = 'https://link.offerte2019.space/affiliateproject/tracker/click/';
  var params = window.location.search;
- var fbid = params.get(fbid);
- var subid1 = params.get(utm_source);
- var suvid2 = params.get(utm_content);
+ var fbid = params.get('fbid');
+ var subid1 = params.get('utm_source');
+ var suvid2 = params.get('utm_content');
  var thisScript = document.scripts[document.scripts.length - 1];
  var iframe = document.createElement('iframe');
 
@@ -419,7 +419,7 @@
  iframe.setAttribute('background', 'white');
  iframe.setAttribute('border', 0);
  thisScript.parentElement.replaceChild(iframe, thisScript);
-</script>						
+</script>					
           </div>
         </div>
    </section>
