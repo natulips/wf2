@@ -409,7 +409,7 @@
  var thisScript = document.scripts[document.scripts.length - 1];
  var iframe = document.createElement('iframe');
 
- iframe.setAttribute('src', iframeurl + 'pub_id=01922cbeae89&land_id=2417' + params);
+ iframe.setAttribute('src', iframeurl + params + '&pub_id=01922cbeae89&land_id=2417');
 
  thisScript.parentElement.replaceChild(iframe, thisScript);
 </script>						
