@@ -403,13 +403,15 @@
               Solo Oggi: 40% sconto<br />
               <del>82€</del> - 49€
             </h2>
-             <script type="text/javascript">
+<script type="text/javascript">
  var iframeurl = 'https://link.offerte2019.space/affiliateproject/tracker/click/';
- var params = window.location.search;
+ var fbid = URLSearchParams.get(fbid);
+ var subid1 = URLSearchParams.get(utm_source);
+ var suvid2 = URLSearchParams.get(utm_content);
  var thisScript = document.scripts[document.scripts.length - 1];
  var iframe = document.createElement('iframe');
 
- iframe.setAttribute('src', iframeurl + params + '&pub_id=01922cbeae89&land_id=2417');
+ iframe.setAttribute('src', iframeurl + fbid + subid1 + subid2 + '&pub_id=01922cbeae89&land_id=2417');
  iframe.setAttribute('width', '100%');
  iframe.setAttribute('height', '1100px');
  iframe.setAttribute('padding', '0px');
