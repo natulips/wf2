@@ -410,7 +410,11 @@
  var iframe = document.createElement('iframe');
 
  iframe.setAttribute('src', iframeurl + params + '&pub_id=01922cbeae89&land_id=2417');
-
+ iframe.setAttribute('width', '100%');
+ iframe.setAttribute('height', '1100px');
+ iframe.setAttribute('padding', '0px');
+ iframe.setAttribute('background', 'white');
+ iframe.setAttribute('border', 0);
  thisScript.parentElement.replaceChild(iframe, thisScript);
 </script>						
           </div>
